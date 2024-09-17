@@ -1,0 +1,29 @@
+* {
+  all: unset;
+  font-family: "Bedstead Nerd Font";
+}
+
+.sysmon {
+  color: #6CE5D5;
+  background-color: #000;
+  font-size: 18px;
+  padding: 8px 16px;
+}
+
+.sysinfo-group {
+  all: unset;
+  border: none;
+}
+
+.sysinfo-symbol {
+  color: #fff;
+}
+
+.systray menu {
+  padding: 4px 0;
+  background-color: #000;
+}
+
+.systray menu menuitem {
+  padding: 6px 0 2px 0;
+}
