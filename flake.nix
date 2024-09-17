@@ -8,7 +8,6 @@
     in {
       nixosConfigurations = import ./hosts inputs;
       homeManagerModules = import ./common/homeManagerModules;
-      nixosModules = import ./common/nixosModules;
       devShells = eachSystem (pkgs: {
         default = pkgs.mkShell {
           buildInputs = with pkgs; [ nil nixfmt-classic treefmt ];
