@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ pkgs, unstable, ... }: {
   programs.gamemode.enable = true;
   programs.gamescope.enable = true;
   programs.steam = {
@@ -36,7 +36,7 @@
     dosbox
     dxvk
 
-    osu-lazer-bin
+    unstable.osu-lazer-bin
     prismlauncher
   ];
 }

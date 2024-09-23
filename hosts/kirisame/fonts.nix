@@ -11,9 +11,9 @@
     kochi-substitute
 
     # Nerd fonts.
-    (nerdfonts.override {
-      fonts = [ "Iosevka" "Ubuntu" "UbuntuMono" "Terminus" ];
-    })
+    # (nerdfonts.override {
+    #   fonts = [ "Ubuntu" "UbuntuMono" "Terminus" ];
+    # })
     (inputs.nixprs.packages.${system}.departure-mono-nerd-font)
   ];
 }

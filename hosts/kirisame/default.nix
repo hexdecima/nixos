@@ -25,6 +25,7 @@
         "https://nixpkgs-wayland.cachix.org"
         "https://nix-community.cachix.org"
         "https://comfybyte.cachix.org"
+        "https://cache.lix.systems"
       ];
       trusted-substituters = substituters;
       trusted-public-keys = [
@@ -32,6 +33,7 @@
         "nixpkgs-wayland.cachix.org-1:3lwxaILxMRkVhehr5StQprHdEo4IrE8sRho9R9HOLYA="
         "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
         "comfybyte.cachix.org-1:MDOWRaQIVADC1iluO91OiGrC0gIG+iIe0koTGhYLycg="
+        "cache.lix.systems:aBnZUw8zA7H35Cz2RyKFVs3H4PlGTLawyY5KRbvJR8o="
       ];
     };
   };

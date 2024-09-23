@@ -19,15 +19,15 @@
     unstable.url = "github:nixos/nixpkgs/nixos-unstable";
     stable.url = "github:nixos/nixpkgs/nixos-24.05";
     nixprs.url = "github:mtlhrt/nixprs";
-    nyanvim.url = "github:mtlhrt/nyanvim";
     quick-stack.url = "github:mtlhrt/quick-stack";
-    patchy.url = "github:mtlhrt/patchy";
+    patchy.url = "git+https://codeberg.org/lilim/patchy.git";
 
     swayfx.url = "github:willpower3309/swayfx";
+    nix-alien.url = "github:thiagokokada/nix-alien";
     wayland.url = "github:nix-community/nixpkgs-wayland";
     lix = {
       url =
-        "https://git.lix.systems/lix-project/nixos-module/archive/2.90.0.tar.gz";
+        "https://git.lix.systems/lix-project/nixos-module/archive/2.91.0.tar.gz";
       inputs.nixpkgs.follows = "stable";
     };
     home = {
@@ -38,22 +38,5 @@
       url = "github:nix-community/nix-index-database";
       inputs.nixpkgs.follows = "unstable";
     };
-  };
-
-  nixConfig = rec {
-    connect-timeout = 14;
-    substituters = [
-      "https://cache.nixos.org"
-      "https://nixpkgs-wayland.cachix.org"
-      "https://nix-community.cachix.org"
-      "https://comfybyte.cachix.org"
-    ];
-    trusted-substituters = substituters;
-    trusted-public-keys = [
-      "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
-      "nixpkgs-wayland.cachix.org-1:3lwxaILxMRkVhehr5StQprHdEo4IrE8sRho9R9HOLYA="
-      "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
-      "comfybyte.cachix.org-1:MDOWRaQIVADC1iluO91OiGrC0gIG+iIe0koTGhYLycg="
-    ];
   };
 }
