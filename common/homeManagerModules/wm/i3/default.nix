@@ -1,10 +1,17 @@
-{ config, ... }: {
+{ config, pkgs, unstable, ... }: {
+  home.packages = [ pkgs.nitrogen pkgs.picom ];
   xsession.windowManager.i3 = {
     enable = true;
     extraConfig = ''
       bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
       bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
       bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+      exec --no-startup-id ${pkgs.nitrogen}/bin/nitrogen --restore
+      exec --no-startup-id ${pkgs.picom}/bin/picom -CGb
+
+      default_border pixel 1
+      default_floating_border pixel 1
     '';
   };
 
@@ -17,6 +24,12 @@
       up = "k";
       down = "j";
       i3 = config.xsession.windowManager.i3.config;
+
+      apps = {
+        screenshot =
+          "${pkgs.flameshot}/bin/flameshot gui -p ~/imgs/screenshots";
+        file_browser = "${unstable.nemo-with-extensions}/bin/nemo";
+      };
     in {
       "${mod}+q" = "kill";
       "${mod}+Shift+c" = "reload";
@@ -54,6 +67,9 @@
       "${mod}+Shift+${right}" = "move right";
       "${mod}+Shift+${down}" = "move down";
       "${mod}+Shift+${left}" = "move left";
+
+      "print" = "exec ${apps.screenshot}";
+      "${mod}+n" = "exec ${apps.file_browser}";
     };
   };
 }

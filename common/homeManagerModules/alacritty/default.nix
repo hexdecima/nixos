@@ -1,8 +1,8 @@
 { inputs, system, ... }:
 let
   font = {
-    package = inputs.nixprs.packages.${system}.bedstead-nerd-font;
-    name = "Bedstead Nerd Font";
+    package = inputs.nixprs.packages.${system}.zpix-nerd-font;
+    name = "Zpix Nerd Font";
     size = 16;
   };
 in {
@@ -10,7 +10,7 @@ in {
   programs.alacritty = {
     enable = true;
     settings = {
-      window = { opacity = 0.9; };
+      window = { opacity = 0.95; };
       colors.draw_bold_text_with_bright_colors = true;
       font = {
         size = font.size;

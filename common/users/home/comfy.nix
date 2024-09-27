@@ -16,8 +16,8 @@
 
   gtk = {
     enable = true;
-    font.package = inputs.nixprs.packages.${system}.bedstead-nerd-font;
-    font.name = "Bedstead Nerd Font";
+    font.package = inputs.nixprs.packages.${system}.zpix-nerd-font;
+    font.name = "Zpix Nerd Font";
     font.size = 16;
   };
 
