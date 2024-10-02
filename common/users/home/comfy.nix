@@ -18,7 +18,7 @@
     enable = true;
     font.package = inputs.nixprs.packages.${system}.zpix-nerd-font;
     font.name = "Zpix Nerd Font";
-    font.size = 16;
+    font.size = 18;
   };
 
   home = {

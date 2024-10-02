@@ -7,36 +7,40 @@
     extraCompatPackages = [ pkgs.proton-ge-bin ];
   };
 
-  environment.systemPackages = with pkgs; [
-    lutris
-    libpng
-    giflib
-    ncurses
-    gnutls
-    mpg123
-    openal
-    v4l-utils
-    alsa-lib
-    libjpeg
-    libpulseaudio
-    alsa-plugins
-    xorg.libXcomposite
-    xorg.libXinerama
-    libgcrypt
-    ocl-icd
-    libxslt
-    libva
-    gtk3
-    gst_all_1.gst-plugins-base
-    gst_all_1.gstreamer
-    gst_all_1.gst-plugins-good
-    gst_all_1.gst-plugins-bad
-    gst_all_1.gst-plugins-ugly
-    cups
-    dosbox
-    dxvk
-
+  environment.systemPackages = let
+    yourUsualWineDepsYeehaw = with pkgs; [
+      libpng
+      giflib
+      ncurses
+      gnutls
+      mpg123
+      openal
+      v4l-utils
+      alsa-lib
+      libjpeg
+      libpulseaudio
+      alsa-plugins
+      xorg.libXcomposite
+      xorg.libXinerama
+      libgcrypt
+      ocl-icd
+      libxslt
+      libva
+      gtk3
+      gst_all_1.gst-plugins-base
+      gst_all_1.gstreamer
+      gst_all_1.gst-plugins-good
+      gst_all_1.gst-plugins-bad
+      gst_all_1.gst-plugins-ugly
+      cups
+      dosbox
+      dxvk
+    ];
+  in yourUsualWineDepsYeehaw ++ [
     unstable.osu-lazer-bin
-    prismlauncher
+    pkgs.lutris
+    pkgs.prismlauncher
+    pkgs.dolphin-emu
+    pkgs.mgba
   ];
 }

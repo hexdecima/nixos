@@ -1,8 +1,10 @@
-{ inputs, system, ... }:
+{ inputs, system, pkgs, ... }:
 let
   font = {
     package = inputs.nixprs.packages.${system}.zpix-nerd-font;
     name = "Zpix Nerd Font";
+    # package = pkgs.nerdfonts.override { fonts = [ "UbuntuMono" ]; };
+    # name = "UbuntuMono Nerd Font";
     size = 16;
   };
 in {
@@ -10,7 +12,7 @@ in {
   programs.alacritty = {
     enable = true;
     settings = {
-      window = { opacity = 0.95; };
+      window = { opacity = 0.9; };
       colors.draw_bold_text_with_bright_colors = true;
       font = {
         size = font.size;
