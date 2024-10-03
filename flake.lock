@@ -775,17 +775,17 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1726957519,
-        "narHash": "sha256-pSWaA7Exdr6nFuozCzVdKEEUHlNLbhEhjVDhCWWJ1rM=",
+        "lastModified": 1727931743,
+        "narHash": "sha256-KMWVKx3TAYWAiLZURPErU+w6YkKS4MWx14fSZXk3OTg=",
         "ref": "refs/heads/main",
-        "rev": "17381e01c8d6ae57e580d86b20f16d69c075ac1e",
-        "revCount": 48,
+        "rev": "e5679d43e5ee4913656eb24125660128df24aa31",
+        "revCount": 50,
         "type": "git",
-        "url": "https://codeberg.org/lilim/patchy.git"
+        "url": "https://codeberg.org/metalista/patchy.git"
       },
       "original": {
         "type": "git",
-        "url": "https://codeberg.org/lilim/patchy.git"
+        "url": "https://codeberg.org/metalista/patchy.git"
       }
     },
     "quick-stack": {

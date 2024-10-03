@@ -16,8 +16,8 @@
 
   gtk = {
     enable = true;
-    font.package = inputs.nixprs.packages.${system}.zpix-nerd-font;
-    font.name = "Zpix Nerd Font";
+    font.package = pkgs.miracode;
+    font.name = "Miracode";
     font.size = 18;
   };
 
@@ -25,10 +25,7 @@
     username = "comfy";
     stateVersion = "23.05";
     homeDirectory = "/home/comfy";
-    sessionVariables = {
-      GTK_USE_PORTAL = "1";
-      EDITOR = "nvim";
-    };
+    sessionVariables = { EDITOR = "nvim"; };
 
     packages = let patchy = inputs.patchy.packages.${system};
     in with pkgs; [ patchy.neovim weechat neomutt ];

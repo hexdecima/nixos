@@ -43,6 +43,7 @@ in {
       environment {
         QT_QPA_PLATFORM "wayland"
         SDL_VIDEODRIVER "wayland"
+        GTK_USE_PORTAL "1";
       }
 
       input {

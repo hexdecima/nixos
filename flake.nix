@@ -20,7 +20,7 @@
     stable.url = "github:nixos/nixpkgs/nixos-24.05";
     nixprs.url = "github:mtlhrt/nixprs";
     quick-stack.url = "github:mtlhrt/quick-stack";
-    patchy.url = "git+https://codeberg.org/lilim/patchy.git";
+    patchy.url = "git+https://codeberg.org/metalista/patchy.git";
 
     swayfx.url = "github:willpower3309/swayfx";
     nix-alien.url = "github:thiagokokada/nix-alien";

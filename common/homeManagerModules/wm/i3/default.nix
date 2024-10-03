@@ -1,9 +1,9 @@
 { pkgs, unstable, config, ... }:
 let
   joinLines = lines: builtins.concatStringsSep "\n" lines;
-  pipe = cmds: builtins.concatStringsSep " | " cmds;
+  screenshot = import ./screenshot.nix pkgs;
 in {
-  home.packages = with pkgs; [ nitrogen picom maim xclip dmenu ];
+  home.packages = with pkgs; [ nitrogen picom maim xclip dmenu mako ];
   home.file.".xinitrc".text = ''
     unset QT_QPA_PLATFORM
     unset SDL_VIDEODRIVER
@@ -23,14 +23,12 @@ in {
         up = "k";
         down = "j";
       };
-      apps = let screenshotPath = "~/imgs/screenshots";
-      in {
+      apps = {
         launcher = "${pkgs.dmenu}/bin/dmenu_run";
-        screenshot = pipe [
-          "${pkgs.maim}/bin/maim -s"
-          # "${pkgs.coreutils}/bin/tee ${screenshotPath}"
-          "${pkgs.xclip}/bin/xclip -selection clipboard -t image/png"
-        ];
+        screenshot = {
+          area = "${screenshot} area";
+          screen = "${screenshot} screen";
+        };
         fileBrowser = "${unstable.nemo-with-extensions}/bin/nemo";
       };
       binds = {
@@ -73,7 +71,8 @@ in {
           "${keys.mod}+Shift+${keys.down} move down"
           "${keys.mod}+Shift+${keys.left} move left"
 
-          "Print exec ${apps.screenshot}"
+          "Print exec ${apps.screenshot.screen}"
+          "Shift+Print exec ${apps.screenshot.area}"
           "${keys.mod}+d exec ${apps.launcher}"
           "${keys.mod}+n exec ${apps.fileBrowser}"
         ]);
@@ -82,6 +81,7 @@ in {
       ''
         exec --no-startup-id ${pkgs.nitrogen}/bin/nitrogen --restore
         exec --no-startup-id ${pkgs.picom}/bin/picom -CGb
+        exec --no-startup-id ${pkgs.mako}/bin/mako
         exec --no-startup-id fcitx5 -r
 
         default_border pixel 1
@@ -93,5 +93,6 @@ in {
   xsession.windowManager.i3.config = {
     modifier = "Mod4";
     keybindings = { }; # no defaults.
+    bars = [ ]; # no bars.
   };
 }

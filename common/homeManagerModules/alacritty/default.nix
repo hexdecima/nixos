@@ -1,10 +1,8 @@
-{ inputs, system, pkgs, ... }:
+{ pkgs, ... }:
 let
   font = {
-    package = inputs.nixprs.packages.${system}.zpix-nerd-font;
-    name = "Zpix Nerd Font";
-    # package = pkgs.nerdfonts.override { fonts = [ "UbuntuMono" ]; };
-    # name = "UbuntuMono Nerd Font";
+    package = pkgs.miracode;
+    name = "Miracode";
     size = 16;
   };
 in {
