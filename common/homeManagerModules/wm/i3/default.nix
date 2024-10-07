@@ -25,6 +25,7 @@ in {
       };
       apps = {
         launcher = "${pkgs.dmenu}/bin/dmenu_run";
+        terminal = "${pkgs.alacritty}/bin/alacritty";
         screenshot = {
           area = "${screenshot} area";
           screen = "${screenshot} screen";
@@ -74,6 +75,7 @@ in {
           "Print exec ${apps.screenshot.screen}"
           "Shift+Print exec ${apps.screenshot.area}"
           "${keys.mod}+d exec ${apps.launcher}"
+          "${keys.mod}+Return exec ${apps.terminal}"
           "${keys.mod}+n exec ${apps.fileBrowser}"
         ]);
       };
