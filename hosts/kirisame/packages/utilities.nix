@@ -6,9 +6,7 @@
   programs.nix-ld.enable = true;
   services.gnome.gnome-keyring.enable = true;
   environment.systemPackages = with pkgs;
-    let
-      nix-alien = inputs.nix-alien.packages.${system}.nix-alien;
-      quick-stack = inputs.quick-stack.packages.${system};
+    let nix-alien = inputs.nix-alien.packages.${system}.nix-alien;
     in [
       swww
       wl-clipboard
@@ -72,7 +70,5 @@
       nodejs_18
       cargo
       cargo-info
-
-      quick-stack.default
     ];
 }
