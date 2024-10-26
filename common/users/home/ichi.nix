@@ -16,9 +16,9 @@
   ];
 
   home = {
-    username = "comfy";
+    username = "ichi";
     stateVersion = "23.05";
-    homeDirectory = "/home/comfy";
+    homeDirectory = "/home/ichi";
     sessionVariables = { EDITOR = "nvim"; };
 
     packages = let patchy = inputs.patchy.packages.${system};

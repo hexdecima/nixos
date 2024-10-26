@@ -1,1 +1,1 @@
-{ imports = [ ./comfy.nix ./operator.nix ]; }
+{ imports = [ ./comfy.nix ./operator.nix ./ichi.nix ]; }

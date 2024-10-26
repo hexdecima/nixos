@@ -3,7 +3,6 @@
   programs.zsh.enable = true;
   programs.dconf.enable = true;
   programs.gnupg.agent.enable = true;
-  programs.nix-ld.enable = true;
   services.gnome.gnome-keyring.enable = true;
   environment.systemPackages = with pkgs;
     let nix-alien = inputs.nix-alien.packages.${system}.nix-alien;
