@@ -16,7 +16,7 @@ let
     };
   };
   mkGenericSystem = {
-    aarch64Linux = modules:
+    x86_64-linux = modules:
       stable.lib.nixosSystem (let
         system = "x86_64-linux";
         unstable = unstableFor system;
@@ -30,4 +30,4 @@ let
         ];
       });
   };
-in { kirisame = mkGenericSystem.aarch64Linux [ ./kirisame ]; }
+in { kirisame = mkGenericSystem.x86_64-linux [ ./kirisame ]; }
