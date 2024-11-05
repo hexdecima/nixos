@@ -19,7 +19,7 @@
     unstable.url = "github:nixos/nixpkgs/nixos-unstable";
     stable.url = "github:nixos/nixpkgs/nixos-24.05";
     nixprs.url = "github:mtlhrt/nixprs";
-    patchy.url = "git+https://codeberg.org/lilim/patchy.git";
+    patchy.url = "git+ssh://git@tildegit.org/mai/patchy.git";
 
     nix-alien.url = "github:thiagokokada/nix-alien";
     wayland.url = "github:nix-community/nixpkgs-wayland";

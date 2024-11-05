@@ -643,17 +643,17 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1729280794,
-        "narHash": "sha256-j+Xjfk805HdN9Y0i3LEwpe1OMkKDOng4zWDO1jxpM7I=",
+        "lastModified": 1730776397,
+        "narHash": "sha256-CPkcBK3EvtCIXooJC1OFpD5cty/yisTMNa2N9Bfa4FI=",
         "ref": "refs/heads/main",
-        "rev": "e229aaabaf8a99b59073eff730dc9af881abf411",
-        "revCount": 53,
+        "rev": "c9af6792383c5d4dbbb52fcc8e73e1f903c1c983",
+        "revCount": 55,
         "type": "git",
-        "url": "https://codeberg.org/lilim/patchy.git"
+        "url": "ssh://git@tildegit.org/mai/patchy.git"
       },
       "original": {
         "type": "git",
-        "url": "https://codeberg.org/lilim/patchy.git"
+        "url": "ssh://git@tildegit.org/mai/patchy.git"
       }
     },
     "root": {
