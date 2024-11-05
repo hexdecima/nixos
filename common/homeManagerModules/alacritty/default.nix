@@ -1,8 +1,10 @@
-{ pkgs, ... }:
+{ inputs, system, pkgs, ... }:
 let
   font = {
-    package = pkgs.miracode;
-    name = "Miracode";
+    package = inputs.nixprs.packages.${system}.scientifica-nerd-font;
+    name = "Scientifica Nerd Font";
+    # package = pkgs.miracode;
+    # name = "Miracode";
     size = 16;
   };
 in {

@@ -64,6 +64,7 @@
       ffmpeg
       (wrapOBS { plugins = with obs-studio-plugins; [ wlrobs ]; })
       xorg.xinit
+      charm-freeze
 
       # should be devshells
       nodejs_18
