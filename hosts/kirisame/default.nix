@@ -19,12 +19,12 @@
       experimental-features = [ "nix-command" "flakes" ];
       trusted-users = [ "@wheel" ];
       log-lines = 20;
-      download-attempts = 10; # default is 5.
+      connect-timeout = 20;
+      download-attempts = 10;
       substituters = [
         "https://cache.nixos.org"
         "https://nixpkgs-wayland.cachix.org"
         "https://nix-community.cachix.org"
-        "https://comfybyte.cachix.org"
         "https://cache.lix.systems"
       ];
       trusted-substituters = substituters;
@@ -32,7 +32,6 @@
         "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
         "nixpkgs-wayland.cachix.org-1:3lwxaILxMRkVhehr5StQprHdEo4IrE8sRho9R9HOLYA="
         "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
-        "comfybyte.cachix.org-1:MDOWRaQIVADC1iluO91OiGrC0gIG+iIe0koTGhYLycg="
         "cache.lix.systems:aBnZUw8zA7H35Cz2RyKFVs3H4PlGTLawyY5KRbvJR8o="
       ];
     };
