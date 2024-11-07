@@ -643,11 +643,11 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1730776397,
-        "narHash": "sha256-CPkcBK3EvtCIXooJC1OFpD5cty/yisTMNa2N9Bfa4FI=",
+        "lastModified": 1730958591,
+        "narHash": "sha256-8YVqrfEUv9g/uzpS/W0KuuMYSJI1FqFpheCX5iumtjQ=",
         "ref": "refs/heads/main",
-        "rev": "c9af6792383c5d4dbbb52fcc8e73e1f903c1c983",
-        "revCount": 55,
+        "rev": "fb9d0df7887305d353febb992c73b320e3b22b66",
+        "revCount": 57,
         "type": "git",
         "url": "ssh://git@tildegit.org/mai/patchy.git"
       },
