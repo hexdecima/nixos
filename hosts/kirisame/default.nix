@@ -71,7 +71,6 @@
 
     PATH = [ "${XDG_BIN_HOME}" ];
     NIXOS_OZONE_WL = "1";
-    LIBVA_DRIVER_NAME = "iHD";
   };
 
   programs.command-not-found.enable = false;

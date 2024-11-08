@@ -6,6 +6,8 @@
       unbind C-b
       set -g base-index 1
       set -g pane-base-index 1
+      set -g default-terminal "screen-256color"
+      set -ga terminal-overrides ",*256col*:Tc"
 
       set-window-option -g mode-keys vi
       bind-key -T copy-mode-vi 'v' send -X begin-selection
@@ -34,6 +36,7 @@
       set -g status-justify "left"
 
       set -g status-style "fg=#E0DEF4,bg=#000000"
+      set -g status-bg black
 
       set -g status-left-length "100"
       set -g status-right-length "100"
@@ -46,8 +49,8 @@
 
       setw -g window-status-activity-style "underscore,fg=#828bb8,bg=#000000"
       setw -g window-status-separator ""
-      setw -g window-status-style "NONE,fg=#828bb8,bg=#000000"
-      setw -g window-status-format "#[fg=#888888,bg=#000000]  #W #I #F "
+      setw -g window-status-style "NONE,fg=#828bb8,bg=#111111"
+      setw -g window-status-format "#[fg=#888888,bg=#111111]  #W #I #F "
       setw -g window-status-current-format "#[fg=#E0DEF4,bg=#111111,bold]  #W #F "
     '';
   };

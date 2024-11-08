@@ -18,17 +18,21 @@ in {
       libreoffice-fresh
       obsidian
       emote
+
+      # browsers
       firefox-devedition
       floorp
       tor-browser
       librewolf
       lynx
+
       hyprpicker
       localsend
-      fractal
+      fractal # GUI matrix client
       wayland.wf-recorder
 
     ] ++ (with unstable; [
+      poezio # TUI xmpp client
       cosmic-files
       cosmic-term
       cosmic-screenshot
