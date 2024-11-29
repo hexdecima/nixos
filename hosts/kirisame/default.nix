@@ -42,7 +42,12 @@
     enable = true;
     driSupport32Bit = true;
     driSupport = true;
-    extraPackages = with pkgs; [ intel-media-driver vaapiVdpau libvdpau-va-gl ];
+    extraPackages = with pkgs; [
+      # intel-media-driver 
+      intel-vaapi-driver
+      vaapiVdpau
+      libvdpau-va-gl
+    ];
   };
 
   environment.shells = with pkgs; [ zsh fish ];
@@ -55,7 +60,12 @@
       xkb.layout = "br";
       exportConfiguration = true;
       displayManager.lightdm.enable = false;
-      videoDrivers = [ "video-intel" "mesa" "vulkan-intel" ];
+      videoDrivers = [
+        "modesetting"
+        # "video-intel"
+        # "mesa"
+        # "vulkan-intel" 
+      ];
     };
     ratbagd.enable = true;
     gvfs.enable = true;
