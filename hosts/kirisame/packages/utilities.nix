@@ -48,6 +48,7 @@
       unstable.xwayland-satellite
       parted
       nix-alien
+      vulkan-tools
 
       nix-prefetch-git
       zip
