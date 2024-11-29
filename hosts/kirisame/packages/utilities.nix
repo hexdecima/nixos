@@ -66,8 +66,9 @@
       (wrapOBS { plugins = with obs-studio-plugins; [ wlrobs ]; })
       xorg.xinit
       charm-freeze
+      wiki-tui
+      unstable.nh
 
-      # should be devshells
       nodejs_18
       cargo
       cargo-info
