@@ -1,9 +1,9 @@
 { inputs, system, ... }:
 let
   font = {
-    package = inputs.nixprs.packages.${system}.scientifica-nerd-font;
-    name = "Scientifica Nerd Font";
-    size = 16;
+    package = inputs.nixprs.packages.${system}.spleen-nerd-font;
+    name = "Spleen16x32 Nerd Font";
+    size = 22;
   };
   colors = builtins.fromTOML (builtins.readFile ./colours.toml);
 in {
@@ -11,7 +11,7 @@ in {
   programs.alacritty = {
     enable = true;
     settings = {
-      window = { opacity = 0.9; };
+      window.opacity = 0.9;
       font = {
         size = font.size;
         normal.family = font.name;
