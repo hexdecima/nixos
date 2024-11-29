@@ -541,16 +541,16 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1714971268,
-        "narHash": "sha256-IKwMSwHj9+ec660l+I4tki/1NRoeGpyA2GdtdYpAgEw=",
+        "lastModified": 1732749044,
+        "narHash": "sha256-T38FQOg0BV5M8FN1712fovzNakSOENEYs+CSkg31C9Y=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "27c13997bf450a01219899f5a83bd6ffbfc70d3c",
+        "rev": "0c5b4ecbed5b155b705336aa96d878e55acd8685",
         "type": "github"
       },
       "original": {
         "owner": "nixos",
-        "ref": "nixos-23.11",
+        "ref": "nixos-24.05",
         "repo": "nixpkgs",
         "type": "github"
       }
@@ -624,17 +624,17 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1727507732,
-        "narHash": "sha256-PK4OdzRL80lgfrhRm6RIeZS1jwDidFeaFIaRBDLupfs=",
-        "owner": "mtlhrt",
-        "repo": "nixprs",
-        "rev": "af11c4a9374945760a1a6d47c59a7cc08efd2016",
-        "type": "github"
+        "lastModified": 1732344074,
+        "narHash": "sha256-4XM733gzY3EbU4Wt2/bnxSktDH943oAy9m6Ed1fqKuc=",
+        "ref": "refs/heads/main",
+        "rev": "48f393a4b6f8011b5cfe7ec0702f7be533c076e1",
+        "revCount": 1,
+        "type": "git",
+        "url": "ssh://git@codeberg.org/hexadecimoe/nixprs.git"
       },
       "original": {
-        "owner": "mtlhrt",
-        "repo": "nixprs",
-        "type": "github"
+        "type": "git",
+        "url": "ssh://git@codeberg.org/hexadecimoe/nixprs.git"
       }
     },
     "patchy": {
@@ -643,17 +643,17 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1731041913,
-        "narHash": "sha256-SMM9aqM6P99iTBmMQcwdN8eiSKUNPUTOeJ65OGWrUXI=",
+        "lastModified": 1732590488,
+        "narHash": "sha256-ys+fQeq2/TY/RyoyE4UcspPJ0Nd5UkVb9oVQEY+iUrY=",
         "ref": "refs/heads/main",
-        "rev": "5dcf60f065a3fae7a695f4d82229c1bb228389f4",
-        "revCount": 58,
+        "rev": "c584ac56c43a2c338244460f779a1f9fa649a5df",
+        "revCount": 62,
         "type": "git",
-        "url": "ssh://git@tildegit.org/mai/patchy.git"
+        "url": "https://git@tildegit.org/mai/patchy.git"
       },
       "original": {
         "type": "git",
-        "url": "ssh://git@tildegit.org/mai/patchy.git"
+        "url": "https://git@tildegit.org/mai/patchy.git"
       }
     },
     "root": {
@@ -754,11 +754,11 @@
     },
     "unstable": {
       "locked": {
-        "lastModified": 1729665710,
-        "narHash": "sha256-AlcmCXJZPIlO5dmFzV3V2XF6x/OpNWUV8Y/FMPGd8Z4=",
+        "lastModified": 1731676054,
+        "narHash": "sha256-OZiZ3m8SCMfh3B6bfGC/Bm4x3qc1m2SVEAlkV6iY7Yg=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "2768c7d042a37de65bb1b5b3268fc987e534c49d",
+        "rev": "5e4fbfb6b3de1aa2872b76d49fafc942626e2add",
         "type": "github"
       },
       "original": {
