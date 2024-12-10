@@ -541,11 +541,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1732749044,
-        "narHash": "sha256-T38FQOg0BV5M8FN1712fovzNakSOENEYs+CSkg31C9Y=",
+        "lastModified": 1731797254,
+        "narHash": "sha256-df3dJApLPhd11AlueuoN0Q4fHo/hagP75LlM5K1sz9g=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "0c5b4ecbed5b155b705336aa96d878e55acd8685",
+        "rev": "e8c38b73aeb218e27163376a2d617e61a2ad9b59",
         "type": "github"
       },
       "original": {
@@ -624,11 +624,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1732344074,
-        "narHash": "sha256-4XM733gzY3EbU4Wt2/bnxSktDH943oAy9m6Ed1fqKuc=",
+        "lastModified": 1733716920,
+        "narHash": "sha256-WWxfSax92p/ncK8Py2cLs1t/zWh8YOn7nGDzQvVKtvQ=",
         "ref": "refs/heads/main",
-        "rev": "48f393a4b6f8011b5cfe7ec0702f7be533c076e1",
-        "revCount": 1,
+        "rev": "676a550671d6b5e5f376c210e87fa668617fd8c4",
+        "revCount": 2,
         "type": "git",
         "url": "ssh://git@codeberg.org/hexadecimoe/nixprs.git"
       },

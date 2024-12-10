@@ -11,7 +11,6 @@ in {
       libsForQt5.kdenlive
       vlc
       xfce.tumbler
-      vesktop
       tenacity
       krita
       (vivaldi.override { proprietaryCodecs = true; })
@@ -28,7 +27,6 @@ in {
 
       hyprpicker
       localsend
-      fractal # GUI matrix client
       wayland.wf-recorder
 
     ] ++ (with unstable; [
