@@ -1,11 +1,9 @@
-{ inputs, system, pkgs, ... }:
+{ inputs, system, ... }:
 let
   font = {
     package = inputs.nixprs.packages.${system}.monofoki-nerd-font;
     name = "Monofoki Nerd Font";
-    # package = pkgs.nerdfonts.override { fonts = [ "UbuntuMono" ]; };
-    # name = "UbuntuMono Nerd Font";
-    size = 22;
+    size = 24;
   };
   colors = builtins.fromTOML (builtins.readFile ./colours.toml);
 in {
@@ -13,7 +11,7 @@ in {
   programs.alacritty = {
     enable = true;
     settings = {
-      window.opacity = 0.98;
+      window.opacity = 0.85;
       font = {
         size = font.size;
         normal.family = font.name;

@@ -630,11 +630,11 @@
         "rev": "676a550671d6b5e5f376c210e87fa668617fd8c4",
         "revCount": 2,
         "type": "git",
-        "url": "ssh://git@codeberg.org/hexadecimoe/nixprs.git"
+        "url": "ssh://git@codeberg.org/hexdecima/nixprs.git"
       },
       "original": {
         "type": "git",
-        "url": "ssh://git@codeberg.org/hexadecimoe/nixprs.git"
+        "url": "ssh://git@codeberg.org/hexdecima/nixprs.git"
       }
     },
     "patchy": {
@@ -643,11 +643,11 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1732590488,
-        "narHash": "sha256-ys+fQeq2/TY/RyoyE4UcspPJ0Nd5UkVb9oVQEY+iUrY=",
+        "lastModified": 1733871964,
+        "narHash": "sha256-E9kr12bu9kfiO4qrhkYjoTiRURiQWT8HAfdX9aB2BRU=",
         "ref": "refs/heads/main",
-        "rev": "c584ac56c43a2c338244460f779a1f9fa649a5df",
-        "revCount": 62,
+        "rev": "7588f3d6803ea7e4ed0259395e011d16b98dc7a2",
+        "revCount": 63,
         "type": "git",
         "url": "https://git@tildegit.org/mai/patchy.git"
       },

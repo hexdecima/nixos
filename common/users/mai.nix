@@ -1,12 +1,12 @@
 { pkgs, config, lib, ... }: {
-  users.users.hex = {
+  users.users.mai = {
     isNormalUser = true;
-    home = "/home/hex";
+    home = "/home/mai";
     extraGroups = [ "wheel" ]
       ++ lib.optional config.programs.wireshark.enable "wireshark"
       ++ lib.optional config.virtualisation.libvirtd.enable "libvirt"
       ++ lib.optional config.virtualisation.docker.enable "docker";
     shell = pkgs.fish;
   };
-  home-manager.users.hex = import ./home/hex.nix;
+  home-manager.users.mai = import ./home/mai.nix;
 }

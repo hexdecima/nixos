@@ -22,9 +22,9 @@
   };
 
   home = {
-    username = "hex";
+    username = "mai";
     stateVersion = "23.05";
-    homeDirectory = "/home/hex";
+    homeDirectory = "/home/mai";
     sessionVariables.EDITOR = "nvim";
 
     packages = let patchy = inputs.patchy.packages.${system};
