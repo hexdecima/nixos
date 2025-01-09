@@ -23,7 +23,7 @@
 
   home = {
     username = "mai";
-    stateVersion = "23.05";
+    stateVersion = "23.11";
     homeDirectory = "/home/mai";
     sessionVariables.EDITOR = "nvim";
 

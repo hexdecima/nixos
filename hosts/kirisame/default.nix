@@ -14,7 +14,7 @@
   ];
 
   nix = {
-    package = pkgs.nixFlakes;
+    package = pkgs.nixVersions.stable;
     settings = rec {
       experimental-features = [ "nix-command" "flakes" ];
       trusted-users = [ "@wheel" ];
@@ -41,7 +41,6 @@
   hardware.opengl = {
     enable = true;
     driSupport32Bit = true;
-    driSupport = true;
     extraPackages = with pkgs; [
       # intel-media-driver 
       intel-vaapi-driver
