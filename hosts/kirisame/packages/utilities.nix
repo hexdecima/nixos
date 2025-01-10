@@ -35,8 +35,8 @@
       dig
       du-dust
       bat
-      transmission
-      transmission-gtk
+      transmission_3
+      transmission_3-gtk
       piper
       pulseaudio
       pavucontrol

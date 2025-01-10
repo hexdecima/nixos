@@ -1,6 +1,6 @@
 {
   imports = [
-    ./pipewire.nix
-    # ./pulse.nix
+    # ./pipewire.nix
+    ./pulse.nix
   ];
 }
