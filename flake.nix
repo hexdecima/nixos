@@ -28,10 +28,7 @@
       url =
         "https://git.lix.systems/lix-project/nixos-module/archive/2.91.1-2.tar.gz";
     };
-    home = {
-      url = "github:nix-community/home-manager/release-24.05";
-      inputs.nixpkgs.follows = "legacy";
-    };
+    home = { url = "github:nix-community/home-manager/release-24.11"; };
     nix-index-database = {
       url = "github:nix-community/nix-index-database";
       inputs.nixpkgs.follows = "unstable";

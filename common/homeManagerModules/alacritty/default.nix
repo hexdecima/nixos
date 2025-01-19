@@ -1,8 +1,8 @@
 { inputs, system, ... }:
 let
   font = {
-    package = inputs.nixprs.packages.${system}.spleen-nerd-font;
-    name = "Spleen16x32 Nerd Font";
+    package = inputs.nixprs.packages.${system}.scientifica-nerd-font;
+    name = "Scientifica Nerd Font";
     size = 24;
   };
   colors = builtins.fromTOML (builtins.readFile ./colours.toml);
