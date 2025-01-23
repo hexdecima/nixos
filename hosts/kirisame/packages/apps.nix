@@ -24,6 +24,7 @@ in {
       tor-browser
       librewolf
       lynx
+      bombadillo
 
       hyprpicker
       localsend
