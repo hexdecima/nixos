@@ -25,6 +25,7 @@ in {
       librewolf
       lynx
       bombadillo
+      newsboat
 
       hyprpicker
       localsend
