@@ -32,6 +32,7 @@
 
       set -g status "on"
       set -g status-justify "left"
+      set -g status-style "fg=#000000,bg=#000000"
 
       set -g status-left "#[fg=#888888,bg=#000000] #S "
 
