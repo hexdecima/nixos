@@ -1,8 +1,10 @@
-{ inputs, system, ... }:
+{ inputs, system, pkgs, ... }:
 let
   font = {
-    package = inputs.nixprs.packages.${system}.scientifica-nerd-font;
-    name = "Scientifica Nerd Font";
+    # package = inputs.nixprs.packages.${system}.scientifica-nerd-font;
+    # name = "Scientifica Nerd Font";
+    package = pkgs.nerdfonts.override { fonts = [ "Terminus" ]; };
+    name = "Terminess Nerd Font Mono";
     size = 24;
   };
   colors = builtins.fromTOML (builtins.readFile ./colours.toml);
