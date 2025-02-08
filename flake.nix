@@ -23,11 +23,10 @@
 
     nix-alien.url = "github:thiagokokada/nix-alien";
     wayland.url = "github:nix-community/nixpkgs-wayland";
-    lix = {
-      url =
-        "https://git.lix.systems/lix-project/nixos-module/archive/2.91.1-2.tar.gz";
-    };
-    home = { url = "github:nix-community/home-manager/release-24.11"; };
+    lix.url =
+      "https://git.lix.systems/lix-project/nixos-module/archive/2.91.1-2.tar.gz";
+    home.url = "github:nix-community/home-manager/release-24.11";
+
     nix-index-database = {
       url = "github:nix-community/nix-index-database";
       inputs.nixpkgs.follows = "unstable";
