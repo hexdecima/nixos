@@ -1,12 +1,10 @@
 inputs@{ stable, unstable, lix, ... }:
 let
-  # for pulling packages from the unstable repository easily.
   unstableFor = system:
     import unstable {
       inherit system;
       config.allowUnfree = true;
     };
-  # for sharing inputs with the home manager configuration.
   homeModulesWith = specialArgs: {
     imports = [ inputs.home.nixosModules.home-manager ];
     home-manager = {

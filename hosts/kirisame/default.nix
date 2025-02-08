@@ -41,9 +41,9 @@
   hardware.graphics = {
     enable = true;
     extraPackages = with pkgs; [
-      # intel-media-driver 
-      intel-vaapi-driver
-      vaapiVdpau
+      intel-media-driver
+      intel-media-sdk
+      # intel-vaapi-driver
       libvdpau-va-gl
     ];
   };
@@ -58,12 +58,7 @@
       xkb.layout = "br";
       exportConfiguration = true;
       displayManager.lightdm.enable = false;
-      videoDrivers = [
-        "modesetting"
-        # "video-intel"
-        # "mesa"
-        # "vulkan-intel" 
-      ];
+      videoDrivers = [ "modesetting" ];
     };
     ratbagd.enable = true;
     gvfs.enable = true;
