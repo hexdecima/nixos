@@ -9,7 +9,7 @@
       nixosConfigurations = import ./hosts inputs;
       homeManagerModules = import ./common/homeManagerModules;
       devShells = eachSystem (pkgs: {
-        default = pkgs.mkShell {
+        default = pkgs.mkShellNoCC {
           buildInputs = with pkgs; [ nil nixfmt-classic treefmt ];
         };
       });

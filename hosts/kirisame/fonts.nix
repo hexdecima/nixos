@@ -1,19 +1,14 @@
 { pkgs, inputs, system, ... }: {
   fonts.packages = with pkgs; [
+    # some basic fonts.
     noto-fonts
     noto-fonts-cjk-sans
     noto-fonts-emoji
     corefonts
     vistafonts
 
-    # Japanese fonts.
+    # CJK fonts.
     ipafont
     kochi-substitute
-
-    # Nerd fonts.
-    # (nerdfonts.override {
-    #   fonts = [ "Ubuntu" "UbuntuMono" "Terminus" ];
-    # })
-    (inputs.nixprs.packages.${system}.departure-mono-nerd-font)
   ];
 }

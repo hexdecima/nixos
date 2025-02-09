@@ -1,18 +1,18 @@
-{ pkgs, inputs, system, ... }: {
+{ pkgs, ... }: {
   gtk = {
     enable = true;
     font = {
-      package = inputs.nixprs.packages.${system}.monofoki-nerd-font;
-      name = "Monofoki Nerd Font";
+      package = pkgs.nerdfonts.override { fonts = [ "UbuntuMono" ]; };
+      name = "UbuntuMono Nerd Font";
       size = 18;
     };
     theme = {
-      package = pkgs.tokyonight-gtk-theme;
-      name = "Tokyonight-Storm-B";
+      package = pkgs.rose-pine-gtk-theme;
+      name = "rose-pine-moon";
     };
     iconTheme = {
-      package = pkgs.tokyonight-gtk-theme;
-      name = "Tokyonight-Dark-Cyan";
+      package = pkgs.rose-pine-icon-theme;
+      name = "rose-pine-moon";
     };
   };
 }

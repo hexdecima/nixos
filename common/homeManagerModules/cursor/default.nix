@@ -1,7 +1,6 @@
-{ unstable, ... }:
+{ pkgs, ... }:
 let
-  inherit (unstable) stdenvNoCC;
-  sakuya-cursors = stdenvNoCC.mkDerivation {
+  sakuya-cursors = pkgs.stdenvNoCC.mkDerivation {
     pname = "sakuya-cursors";
     version = "2022-03-24";
     src = ./sakuya-cursors;
