@@ -1,25 +1,26 @@
 { pkgs, lib, unstable, ... }:
 let
-  enableWaybar = false;
+  inherit (lib) getExe;
+  inherit (pkgs) alacritty fuzzel;
+  inherit (unstable) nemo-with-extensions cosmic-notifications;
+
   terminal = {
-    cmd = "${pkgs.alacritty}/bin/alacritty";
-    package = pkgs.alacritty;
+    cmd = getExe alacritty;
+    package = alacritty;
   };
   launcher = {
-    cmd = "${pkgs.fuzzel}/bin/fuzzel";
-    package = pkgs.fuzzel;
+    cmd = getExe fuzzel;
+    package = fuzzel;
   };
   fileBrowser = {
-    cmd = "${unstable.nemo-with-extensions}/bin/nemo";
-    package = unstable.nemo-with-extensions;
+    cmd = getExe nemo-with-extensions;
+    package = nemo-with-extensions;
   };
   notifications = {
-    cmd = "${unstable.cosmic-notifications}/bin/cosmic-notifications";
-    package = unstable.cosmic-notifications;
+    cmd = getExe cosmic-notifications;
+    package = cosmic-notifications;
   };
 in {
-  imports = lib.optional enableWaybar ./waybar;
-
   home.packages = [
     pkgs.niri
     terminal.package
@@ -34,7 +35,6 @@ in {
       spawn-at-startup "swww-daemon"
       spawn-at-startup "eww daemon"
       spawn-at-startup "fcitx5"
-      ${lib.optionalString enableWaybar ''spawn-at-startup "waybar"''}
 
       prefer-no-csd // begone, decorations.
 
