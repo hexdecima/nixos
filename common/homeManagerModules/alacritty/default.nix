@@ -1,8 +1,8 @@
 { pkgs, ... }:
 let
   font = {
-    package = pkgs.nerdfonts.override { fonts = [ "UbuntuMono" ]; };
-    name = "UbuntuMono Nerd Font";
+    package = pkgs.nerdfonts.override { fonts = [ "IosevkaTerm" ]; };
+    name = "IosevkaTerm Nerd Font";
     size = 24;
   };
   colours = builtins.fromTOML (builtins.readFile ./colours.toml);
