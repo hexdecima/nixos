@@ -20,7 +20,7 @@ in {
 
       # browsers
       firefox-devedition
-      floorp
+      unstable.floorp
       tor-browser
       librewolf
       lynx
