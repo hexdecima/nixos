@@ -1,8 +1,8 @@
-{ pkgs, ... }:
+{ inputs, system, ... }:
 let
   font = {
-    package = pkgs.nerdfonts.override { fonts = [ "IosevkaTerm" ]; };
-    name = "IosevkaTerm Nerd Font";
+    package = inputs.nixprs.packages.${system}.bedstead-nerd-font;
+    name = "Bedstead Nerd Font";
     size = 24;
   };
   colours = builtins.fromTOML (builtins.readFile ./colours.toml);
