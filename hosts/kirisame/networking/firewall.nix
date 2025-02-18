@@ -1,5 +1,4 @@
 {
-  networking.nftables.enable = true;
   networking.firewall = {
     allowedTCPPortRanges = [{
       from = 3000;

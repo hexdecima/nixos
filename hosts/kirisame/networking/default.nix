@@ -1,5 +1,7 @@
 {
-  imports = [ ./firewall.nix ./ssh.nix ./vpn.nix ];
-  networking.hostName = "kirisame";
-  networking.networkmanager.enable = true;
+  imports = [ ./firewall.nix ./ssh.nix ./vpn.nix ./dns.nix ];
+  networking = {
+    hostName = "kirisame";
+    networkmanager.enable = true;
+  };
 }
