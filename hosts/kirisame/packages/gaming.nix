@@ -36,7 +36,11 @@
       dosbox
       dxvk
     ];
-  in yourUsualWineDepsYeehaw
-  ++ (with pkgs; [ lutris prismlauncher dolphin-emu mgba ])
-  ++ (with unstable; [ osu-lazer-bin dwarf-fortress nethack ]);
+  in yourUsualWineDepsYeehaw ++ (with pkgs; [ lutris prismlauncher ])
+  ++ (with unstable; [
+    osu-lazer-bin
+    dwarf-fortress
+    nethack
+    (retroarch.withCores (cores: with cores; [ mgba dolphin pcsx2 ]))
+  ]);
 }

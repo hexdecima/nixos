@@ -343,6 +343,22 @@
         "type": "github"
       }
     },
+    "nixpkgs_6": {
+      "locked": {
+        "lastModified": 1727348695,
+        "narHash": "sha256-J+PeFKSDV+pHL7ukkfpVzCOO7mBSrrpJ3svwBFABbhI=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "1925c603f17fc89f4c8f6bf6f631a802ad85d784",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "nixprs": {
       "inputs": {
         "nixpkgs": "nixpkgs_4"
@@ -367,17 +383,17 @@
         "unstable": "unstable"
       },
       "locked": {
-        "lastModified": 1739758496,
-        "narHash": "sha256-bRUv9E3nLF/+G6wPa2I2C2l16BURmTJrx9UAivCWZNE=",
-        "ref": "refs/heads/main",
-        "rev": "3708f47490bc2b9f5ebad166bbb15ab8fbde5fc7",
-        "revCount": 87,
-        "type": "git",
-        "url": "https://git@tildegit.org/mai/patchy.git"
+        "lastModified": 1739847392,
+        "narHash": "sha256-Fg6E7+DQcATWw0Qe1RrUhlhi5Ma1Txbuv4cEGdna4E8=",
+        "owner": "hexadecimalhex",
+        "repo": "patchy",
+        "rev": "102bfa92a4658f3c6b942d6bfe5d10e83109fba1",
+        "type": "github"
       },
       "original": {
-        "type": "git",
-        "url": "https://git@tildegit.org/mai/patchy.git"
+        "owner": "hexadecimalhex",
+        "repo": "patchy",
+        "type": "github"
       }
     },
     "root": {
@@ -390,7 +406,8 @@
         "patchy": "patchy",
         "stable": "stable_2",
         "unstable": "unstable_2",
-        "wayland": "wayland"
+        "wayland": "wayland",
+        "zen-flake": "zen-flake"
       }
     },
     "stable": {
@@ -519,6 +536,24 @@
       "original": {
         "owner": "nix-community",
         "repo": "nixpkgs-wayland",
+        "type": "github"
+      }
+    },
+    "zen-flake": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_6"
+      },
+      "locked": {
+        "lastModified": 1727721329,
+        "narHash": "sha256-QYlWZwUSwrM7BuO+dXclZIwoPvBIuJr6GpFKv9XKFPI=",
+        "owner": "MarceColl",
+        "repo": "zen-browser-flake",
+        "rev": "e6ab73f405e9a2896cce5956c549a9cc359e5fcc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "MarceColl",
+        "repo": "zen-browser-flake",
         "type": "github"
       }
     }

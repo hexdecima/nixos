@@ -1,5 +1,7 @@
 { pkgs, inputs, system, unstable, ... }:
-let wayland = inputs.wayland.packages.${system};
+let 
+  wayland = inputs.wayland.packages.${system};
+  zen-browser = inputs.zen-flake.packages.${system};
 in {
   programs.wireshark = {
     enable = true;
@@ -26,16 +28,17 @@ in {
       lynx
       bombadillo
       newsboat
+      zen-browser.generic
 
       hyprpicker
       localsend
       wayland.wf-recorder
-
     ] ++ (with unstable; [
       poezio # TUI xmpp client
       cosmic-files
       cosmic-term
       cosmic-screenshot
       cosmic-notifications
+      jami
     ]);
 }
