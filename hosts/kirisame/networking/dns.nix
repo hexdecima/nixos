@@ -2,25 +2,16 @@
 let
   stateDirectory = "dnscrypt-proxy";
   forwarding_rules = pkgs.writeText "dnscrypt-proxy2-forwarding-rules" ''
-    lan 192.168.1.1
-    home 192.168.1.1
-    home.arpa 192.168.1.1
-    localdomain 192.168.1.1
+    lan 10.0.0.1
+    home 10.0.0.1
+    home.arpa 10.0.0.1
+    localdomain 10.0.0.1
     local $DHCP
   '';
 in {
   networking = {
     nameservers = [ "::1" ];
     networkmanager.dns = "none";
-    firewall.extraCommands = let inherit (pkgs) lib;
-    in ''
-      ip6tables --table nat --flush OUTPUT
-      ${lib.flip (lib.concatMapStringsSep "\n") [ "udp" "tcp" ] (proto: ''
-        ip6tables --table nat --append OUTPUT \
-        --protocol ${proto} --destination ::1 --destination-port 53 \
-        --jump REDIRECT --to-ports 51
-      '')}
-    '';
   };
   services.dnscrypt-proxy2 = {
     enable = true;
