@@ -1,5 +1,5 @@
 {
-  imports = [ ./firewall.nix ./ssh.nix ./vpn.nix ./dns.nix ];
+  imports = [ ./firewall.nix ./ssh.nix ./vpn.nix ./dns ];
   networking = {
     hostName = "kirisame";
     networkmanager.enable = true;

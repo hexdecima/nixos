@@ -17,7 +17,7 @@ in {
     enable = true;
     settings = {
       inherit forwarding_rules;
-      listen_addresses = [ "[::1]:51" ];
+      listen_addresses = [ "[::1]:53" ];
       sources.public-resolvers = {
         urls = [
           "https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v3/public-resolvers.md"
@@ -38,3 +38,4 @@ in {
   systemd.services.dnscrypt-proxy2.serviceConfig.StateDirectory =
     stateDirectory;
 }
+
