@@ -1,5 +1,5 @@
 { pkgs, inputs, system, unstable, ... }:
-let 
+let
   wayland = inputs.wayland.packages.${system};
   zen-browser = inputs.zen-flake.packages.${system};
 in {
@@ -7,38 +7,35 @@ in {
     enable = true;
     package = pkgs.wireshark;
   };
-  environment.systemPackages = with pkgs;
-    [
-      libsForQt5.okular
-      libsForQt5.kdenlive
-      vlc
-      xfce.tumbler
-      tenacity
-      krita
-      (vivaldi.override { proprietaryCodecs = true; })
-      libreoffice-fresh
-      obsidian
-      emote
+  environment.systemPackages = [ zen-browser.generic ] ++ (with pkgs; [
+    libsForQt5.okular
+    libsForQt5.kdenlive
+    vlc
+    xfce.tumbler
+    tenacity
+    krita
+    (vivaldi.override { proprietaryCodecs = true; })
+    libreoffice-fresh
+    obsidian
+    emote
 
-      # browsers
-      firefox-devedition
-      unstable.floorp
-      tor-browser
-      librewolf
-      lynx
-      bombadillo
-      newsboat
-      zen-browser.generic
+    # browsers
+    firefox-devedition
+    tor-browser
+    librewolf
+    lynx
+    bombadillo
+    newsboat
 
-      hyprpicker
-      localsend
-      wayland.wf-recorder
-    ] ++ (with unstable; [
-      poezio # TUI xmpp client
-      cosmic-files
-      cosmic-term
-      cosmic-screenshot
-      cosmic-notifications
-      jami
-    ]);
+    hyprpicker
+    localsend
+    wayland.wf-recorder
+  ]) ++ (with unstable; [
+    floorp
+    cosmic-files
+    cosmic-term
+    cosmic-screenshot
+    cosmic-notifications
+    jami
+  ]);
 }

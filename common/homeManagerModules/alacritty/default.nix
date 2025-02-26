@@ -1,8 +1,8 @@
-{ inputs, system, ... }:
+{ pkgs, ... }:
 let
   font = {
-    package = inputs.nixprs.packages.${system}.bedstead-nerd-font;
-    name = "Bedstead Nerd Font";
+    package = pkgs.miracode;
+    name = "Miracode";
     size = 24;
   };
   colours = builtins.fromTOML (builtins.readFile ./colours.toml);
