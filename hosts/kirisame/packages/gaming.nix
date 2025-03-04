@@ -38,6 +38,8 @@
     ];
   in yourUsualWineDepsYeehaw ++ (with pkgs; [ lutris prismlauncher ])
   ++ (with unstable; [
+    wineWowPackages.waylandFull
+    winetricks
     osu-lazer-bin
     dwarf-fortress
     nethack
