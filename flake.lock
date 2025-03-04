@@ -383,11 +383,11 @@
         "unstable": "unstable"
       },
       "locked": {
-        "lastModified": 1740114058,
-        "narHash": "sha256-f+EnQfUfwk4oWEOg2pzlkA3un7iOWOWSS5vukrRCh1o=",
+        "lastModified": 1740864548,
+        "narHash": "sha256-7+2cZlOPd+k1C1IhUfwoY8Ha43TWp1+iH7j0/AXONRo=",
         "owner": "hexentia",
         "repo": "patchy",
-        "rev": "54ecce972448bc3a901176988fdfbdb0c944d6ef",
+        "rev": "66e3a38b92bc0212a6a56f6be9dc3ce3645002d3",
         "type": "github"
       },
       "original": {
