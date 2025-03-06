@@ -6,6 +6,7 @@
     ssh
     tmux
     eww
+    gtk
     shells.fish
     shells.zsh
     shells.starship
@@ -13,13 +14,6 @@
     wm.niri
     wm.i3
   ];
-
-  gtk = {
-    enable = true;
-    font.package = pkgs.miracode;
-    font.name = "Miracode";
-    font.size = 18;
-  };
 
   home = {
     username = "mai";
