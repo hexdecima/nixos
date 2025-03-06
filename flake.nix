@@ -2,7 +2,7 @@
   outputs = inputs:
     let
       inherit (inputs) stable;
-      systems = [ "x86_64-linux" ];
+      systems = [ "x86_64-linux" "aarch64-linux" ];
       eachSystem = f:
         stable.lib.genAttrs systems (system: f stable.legacyPackages.${system});
     in {
