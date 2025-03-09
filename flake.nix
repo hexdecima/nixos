@@ -23,8 +23,11 @@
 
     nix-alien.url = "github:thiagokokada/nix-alien";
     wayland.url = "github:nix-community/nixpkgs-wayland";
-    lix.url =
-      "https://git.lix.systems/lix-project/nixos-module/archive/2.91.1-2.tar.gz";
+    lix = {
+      url =
+        "https://git.lix.systems/lix-project/nixos-module/archive/2.92.0.tar.gz";
+      inputs.nixpkgs.follows = "stable";
+    };
     home.url = "github:nix-community/home-manager/release-24.11";
     zen-flake.url = "github:0xc000022070/zen-browser-flake";
 
