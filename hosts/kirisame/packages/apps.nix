@@ -20,7 +20,6 @@ in {
     emote
 
     # browsers
-    firefox-devedition
     tor-browser
     librewolf
     lynx
