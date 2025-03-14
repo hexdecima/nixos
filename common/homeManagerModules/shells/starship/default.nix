@@ -20,7 +20,7 @@
     in {
       command_timeout = 3000;
       format = ''
-        [┌────](bold cyan) ${modules}
+        [┌────](bold cyan)${modules}
         [└─](bold cyan)$character'';
       character = {
         success_symbol = "[>](bold green)";
@@ -28,17 +28,17 @@
       };
       username = {
         show_always = true;
-        format = "[$user]($style)@";
+        format = "\\[[$user]($style)@";
         style_user = "bold cyan";
         style_root = "bold bright-red";
       };
       hostname = {
         ssh_only = false;
         style = "bold bright-purple";
-        format = "[$hostname]($style)";
+        format = "[$hostname]($style)\\]";
       };
       directory = {
-        format = " in [$path]($style)[$read_only]($read_only_style) ";
+        format = " [$path]($style)[$read_only]($read_only_style) ";
         read_only = " <no touchie!>";
         truncation_length = 2;
       };

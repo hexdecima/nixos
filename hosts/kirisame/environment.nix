@@ -1,5 +1,5 @@
-{ pkgs, ... }: {
-  environment.shells = with pkgs; [ zsh fish ];
+{ pkgs, unstable, ... }: {
+  environment.shells = (with pkgs; [ zsh fish ]) ++ [ unstable.nushell ];
   environment.sessionVariables = rec {
     XDG_CACHE_HOME = "$HOME/.cache";
     XDG_CONFIG_HOME = "$HOME/.config";

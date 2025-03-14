@@ -10,7 +10,7 @@
       homeManagerModules = import ./common/homeManagerModules;
       devShells = eachSystem (pkgs: {
         default = pkgs.mkShellNoCC {
-          buildInputs = with pkgs; [ nil nixfmt-classic treefmt ];
+          buildInputs = with pkgs; [ nil nixfmt-classic treefmt nufmt taplo ];
         };
       });
     };

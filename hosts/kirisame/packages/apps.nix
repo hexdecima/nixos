@@ -14,12 +14,11 @@ in {
     xfce.tumbler
     tenacity
     krita
-    (vivaldi.override { proprietaryCodecs = true; })
     libreoffice-fresh
     obsidian
     emote
 
-    # browsers
+    (vivaldi.override { proprietaryCodecs = true; })
     tor-browser
     librewolf
     lynx
@@ -35,6 +34,5 @@ in {
     cosmic-term
     cosmic-screenshot
     cosmic-notifications
-    jami
   ]);
 }
