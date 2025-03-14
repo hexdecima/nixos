@@ -50,14 +50,12 @@
       nix-alien
       vulkan-tools
 
-      nix-prefetch-git
       zip
       unzip
       unrar
       git
       imv
       mpv
-      keychain
       cachix
       wmctrl
       p7zip
@@ -66,10 +64,9 @@
       (wrapOBS { plugins = with obs-studio-plugins; [ wlrobs ]; })
       xorg.xinit
       charm-freeze
-      wiki-tui
-      unstable.nh
+      uutils-coreutils
 
-      nodejs_18
+      nodejs_22
       cargo
       cargo-info
     ];
