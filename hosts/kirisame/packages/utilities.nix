@@ -1,4 +1,8 @@
-{ pkgs, inputs, system, unstable, ... }: {
+{ pkgs, inputs, system, unstable, ... }: 
+let 
+  inherit (pkgs) lib;
+in
+{
   programs.fish.enable = true;
   programs.zsh.enable = true;
   programs.dconf.enable = true;
@@ -64,7 +68,8 @@
       (wrapOBS { plugins = with obs-studio-plugins; [ wlrobs ]; })
       xorg.xinit
       charm-freeze
-      uutils-coreutils
+      # override `coreutils`'s binaries.
+      (lib.hiPrio uutils-coreutils-noprefix)
 
       nodejs_22
       cargo
