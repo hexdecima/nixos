@@ -1,6 +1,7 @@
 { inputs, system, pkgs, ... }: {
   imports = with inputs.self.homeManagerModules; [
     alacritty
+    kitty
     cursor
     gpg
     ssh

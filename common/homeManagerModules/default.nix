@@ -8,4 +8,5 @@
   wm = import ./wm;
   eww = import ./eww;
   gtk = import ./gtk;
+  kitty = import ./kitty;
 }

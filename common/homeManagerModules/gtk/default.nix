@@ -1,9 +1,9 @@
-{ pkgs, ... }: {
+{ pkgs, inputs, system, ... }: {
   gtk = {
     enable = true;
     font = {
-      package = pkgs.nerdfonts.override { fonts = [ "UbuntuMono" ]; };
-      name = "UbuntuMono Nerd Font";
+      package = inputs.nixprs.packages.${system}.departure-mono-nerd-font;
+      name = "DepartureMono Nerd Font";
       size = 18;
     };
     theme = {

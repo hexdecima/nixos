@@ -1,12 +1,12 @@
 { pkgs, lib, unstable, ... }:
 let
   inherit (lib) getExe;
-  inherit (pkgs) alacritty fuzzel;
-  inherit (unstable) nemo-with-extensions cosmic-notifications;
+  inherit (pkgs) fuzzel;
+  inherit (unstable) kitty nemo-with-extensions cosmic-notifications;
 
   terminal = {
-    cmd = getExe alacritty;
-    package = alacritty;
+    cmd = getExe kitty;
+    package = kitty;
   };
   launcher = {
     cmd = getExe fuzzel;
