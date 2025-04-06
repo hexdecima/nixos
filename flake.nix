@@ -18,8 +18,8 @@
   inputs = {
     unstable.url = "github:nixos/nixpkgs/nixos-unstable";
     stable.url = "github:nixos/nixpkgs/nixos-24.11";
-    nixprs.url = "github:hexentia/nixprs";
-    patchy.url = "github:hexentia/patchy";
+    nixprs.url = "github:hexdecima/nixprs";
+    patchy.url = "github:hexdecima/patchy";
 
     nix-alien.url = "github:thiagokokada/nix-alien";
     wayland.url = "github:nix-community/nixpkgs-wayland";
