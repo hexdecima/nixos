@@ -1,8 +1,8 @@
 { inputs, system, ... }:
 let
   font = {
-    package = inputs.nixprs.packages.${system}.departure-mono-nerd-font;
-    name = "DepartureMono Nerd Font";
+    package = inputs.nixprs.packages.${system}.saxmono-nerd-font;
+    name = "SaxMono Nerd Font";
     size = 24;
   };
   colours = builtins.fromTOML (builtins.readFile ./colours.toml);
