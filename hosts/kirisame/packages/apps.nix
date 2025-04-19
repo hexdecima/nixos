@@ -17,6 +17,7 @@ in {
     libreoffice-fresh
     obsidian
     emote
+    vesktop
 
     (vivaldi.override { proprietaryCodecs = true; })
     tor-browser
