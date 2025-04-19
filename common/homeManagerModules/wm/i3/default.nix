@@ -1,7 +1,7 @@
 { pkgs, unstable, config, ... }:
 let
   joinLines = lines: builtins.concatStringsSep "\n" lines;
-  screenshot = import ./screenshot.nix pkgs;
+  # screenshot = import ./screenshot.nix pkgs;
 in {
   home.packages = with pkgs; [ nitrogen picom maim xclip dmenu mako ];
   home.file.".xinitrc".text = ''
@@ -27,8 +27,10 @@ in {
         launcher = "${pkgs.dmenu}/bin/dmenu_run";
         terminal = "${pkgs.alacritty}/bin/alacritty";
         screenshot = {
-          area = "${screenshot} area";
-          screen = "${screenshot} screen";
+          # area = "${screenshot} area";
+          # screen = "${screenshot} screen";
+          area = "${pkgs.flameshot}/bin/flameshot gui";
+          screen = "${pkgs.flameshot}/bin/flameshot gui";
         };
         fileBrowser = "${unstable.nemo-with-extensions}/bin/nemo";
       };
