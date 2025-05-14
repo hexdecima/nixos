@@ -36,7 +36,7 @@
       dosbox
       dxvk
     ];
-  in yourUsualWineDepsYeehaw ++ (with pkgs; [ lutris prismlauncher ])
+  in yourUsualWineDepsYeehaw ++ (with pkgs; [ lutris prismlauncher dotnet-sdk ])
   ++ (with unstable; [
     wineWowPackages.waylandFull
     winetricks
