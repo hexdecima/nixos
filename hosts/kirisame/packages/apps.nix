@@ -17,7 +17,6 @@ in {
     libreoffice-fresh
     obsidian
     emote
-    vesktop
 
     (vivaldi.override { proprietaryCodecs = true; })
     tor-browser
@@ -31,6 +30,7 @@ in {
     wayland.wf-recorder
   ]) ++ (with unstable; [
     floorp
+    vesktop
     cosmic-files
     cosmic-term
     cosmic-screenshot
