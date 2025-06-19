@@ -65,7 +65,7 @@ in
       p7zip
       nix-tree
       ffmpeg
-      (wrapOBS { plugins = with obs-studio-plugins; [ wlrobs ]; })
+      (unstable.wrapOBS { plugins = with unstable.obs-studio-plugins; [ wlrobs ]; })
       xorg.xinit
       charm-freeze
       # override `coreutils`'s binaries.

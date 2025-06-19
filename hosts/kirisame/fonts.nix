@@ -1,4 +1,4 @@
-{ pkgs, inputs, system, ... }: {
+{ pkgs, ... }: {
   fonts.packages = with pkgs; [
     # some basic fonts.
     noto-fonts
@@ -10,7 +10,5 @@
     # CJK fonts.
     ipafont
     kochi-substitute
-
-    inputs.nixprs.packages.${system}.saxmono-nerd-font
   ];
 }

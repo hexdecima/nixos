@@ -1,5 +1,5 @@
 { pkgs, ... }: {
-  home.packages = [ (pkgs.nerdfonts.override { fonts = [ "UbuntuMono" ]; }) ];
+  home.packages = [ (pkgs.nerd-fonts.ubuntu-mono) ];
   programs.waybar = {
     enable = true;
     package = pkgs.waybar;

@@ -7,7 +7,7 @@ in {
     enable = true;
     package = pkgs.wireshark;
   };
-  environment.systemPackages = [ zen-browser.default ] ++ (with pkgs; [
+  environment.systemPackages = [ zen-browser.beta ] ++ (with pkgs; [
     libsForQt5.okular
     libsForQt5.kdenlive
     vlc

@@ -38,7 +38,7 @@
     ];
   in yourUsualWineDepsYeehaw ++ (with pkgs; [ lutris prismlauncher dotnet-sdk ])
   ++ (with unstable; [
-    wineWowPackages.waylandFull
+    wineWowPackages.stagingFull
     winetricks
     osu-lazer-bin
     dwarf-fortress

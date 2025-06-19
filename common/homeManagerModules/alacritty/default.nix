@@ -1,10 +1,10 @@
-{ inputs, system, ... }:
+{ pkgs, ... }:
 let
   font = {
-    # package = pkgs.nerdfonts.override { fonts = [ "UbuntuMono" ]; };
-    # name = "UbuntuMono Nerd Font";
-    package = inputs.nixprs.packages.${system}.departure-mono-nerd-font;
-    name = "DepartureMono Nerd Font";
+    package = pkgs.nerd-fonts._3270;
+    name = "3270 Nerd Font SemCond";
+    # package = inputs.nixprs.packages.${system}.departure-mono-nerd-font;
+    # name = "DepartureMono Nerd Font";
     size = 24;
   };
   colours = builtins.fromTOML (builtins.readFile ./colours.toml);
