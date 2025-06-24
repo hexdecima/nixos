@@ -5,8 +5,8 @@ let
   inherit (unstable) kitty nemo-with-extensions cosmic-notifications;
 
   terminal = {
-    cmd = getExe kitty;
-    package = kitty;
+    cmd = getExe alacritty;
+    package = alacritty;
   };
   launcher = {
     cmd = getExe fuzzel;
