@@ -18,14 +18,14 @@
   inputs = {
     unstable.url = "github:nixos/nixpkgs/nixos-unstable";
     stable.url = "github:nixos/nixpkgs/nixos-25.05";
-    nixprs.url = "github:hexdecima/nixprs";
+    tundra.url = "github:hexdecima/tundra";
     patchy.url = "github:hexdecima/patchy";
 
     nix-alien.url = "github:thiagokokada/nix-alien";
     wayland.url = "github:nix-community/nixpkgs-wayland";
     lix = {
       url =
-        "https://git.lix.systems/lix-project/nixos-module/archive/2.92.0-3.tar.gz";
+        "https://git.lix.systems/lix-project/nixos-module/archive/2.93.1.tar.gz";
       inputs.nixpkgs.follows = "stable";
     };
     home.url = "github:nix-community/home-manager/release-25.05";
