@@ -10,6 +10,7 @@ in
   services.gnome.gnome-keyring.enable = true;
   environment.systemPackages = with pkgs;
     let nix-alien = inputs.nix-alien.packages.${system}.nix-alien;
+    tundra = inputs.tundra.packages.${system};
     in [
       swww
       wl-clipboard
@@ -70,6 +71,7 @@ in
       charm-freeze
       # override `coreutils`'s binaries.
       (lib.hiPrio uutils-coreutils-noprefix)
+      tundra.textract-bin
 
       nodejs_22
       cargo

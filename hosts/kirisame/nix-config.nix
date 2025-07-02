@@ -1,6 +1,11 @@
 { pkgs, ... }: {
   nix = {
     package = pkgs.nixVersions.stable;
+
+    # workaround a network building issue.
+    # see: https://github.com/NixOS/nix/issues/5089
+    sandboxPaths = [ "/var/run/nscd/socket" ];
+
     settings = rec {
       experimental-features = [ "nix-command" "flakes" ];
       trusted-users = [ "@wheel" ];

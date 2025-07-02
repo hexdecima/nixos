@@ -1,8 +1,8 @@
-{ pkgs, inputs, system, ... }:
+{ pkgs, unstable, inputs, system, ... }:
 let
   font = {
-    package = inputs.nixprs.packages.${system}.scientifica-nerd-font;
-    name = "Scientifica Nerd Font";
+    package = inputs.tundra.packages.${system}.zpix-nerd-font;
+    name = "Zpix Nerd Font";
     size = 24;
   };
   colours = builtins.fromTOML (builtins.readFile ./colours.toml);

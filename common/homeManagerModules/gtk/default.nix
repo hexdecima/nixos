@@ -2,7 +2,7 @@
   gtk = {
     enable = true;
     font = {
-      package = inputs.nixprs.packages.${system}.departure-mono-nerd-font;
+      package = inputs.tundra.packages.${system}.departure-mono-nerd-font;
       name = "DepartureMono Nerd Font";
       size = 18;
     };

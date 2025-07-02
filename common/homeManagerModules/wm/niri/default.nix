@@ -2,7 +2,7 @@
 let
   inherit (lib) getExe;
   inherit (pkgs) fuzzel;
-  inherit (unstable) kitty nemo-with-extensions cosmic-notifications;
+  inherit (unstable) alacritty nemo-with-extensions cosmic-notifications;
 
   terminal = {
     cmd = getExe alacritty;
@@ -23,7 +23,6 @@ let
 in {
   home.packages = [
     pkgs.niri
-    terminal.package
     launcher.package
     fileBrowser.package
     notifications.package

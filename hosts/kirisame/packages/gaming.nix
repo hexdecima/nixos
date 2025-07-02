@@ -40,7 +40,8 @@
   ++ (with unstable; [
     wineWowPackages.stagingFull
     winetricks
-    osu-lazer-bin
+    # osu 404ing for some reason
+    # osu-lazer-bin
     dwarf-fortress
     nethack
     (retroarch.withCores (cores: with cores; [ mgba dolphin pcsx2 ]))
