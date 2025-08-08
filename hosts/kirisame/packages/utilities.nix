@@ -72,6 +72,7 @@ in
       # override `coreutils`'s binaries.
       (lib.hiPrio uutils-coreutils-noprefix)
       tundra.textract-bin
+      hexyl
 
       nodejs_22
       cargo

@@ -56,7 +56,9 @@ in {
       layout {
         gaps 0
         default-column-width { proportion 1.0; }
-        border { off; }
+        border { 
+          off;
+        }
         focus-ring { off; }
       }
 

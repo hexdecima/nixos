@@ -1,0 +1,15 @@
+theme "nord"
+show_release_notes false
+show_startup_tips false
+pane_frames false
+default_mode "locked"
+keybinds {
+  locked {
+    bind "Ctrl s" { SwitchToMode "normal"; }
+    bind "Ctrl g" { SwitchToMode "search"; }
+  }
+  normal {
+    bind "Ctrl g" { SwitchToMode "search"; }
+    bind "Ctrl s" { SwitchToMode "locked"; }
+  }
+}

@@ -9,4 +9,5 @@
   eww = import ./eww;
   gtk = import ./gtk;
   kitty = import ./kitty;
+  zellij = import ./zellij;
 }

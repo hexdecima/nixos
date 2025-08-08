@@ -316,11 +316,11 @@
         "unstable": "unstable"
       },
       "locked": {
-        "lastModified": 1747194826,
-        "narHash": "sha256-QgFMiQ0L+UZaw9kdvQYFtcY4wMSL6uU1hdrmQQQVXlQ=",
+        "lastModified": 1754533622,
+        "narHash": "sha256-7wA54NX1aGZ8hYtRfUXVSXmHQn5BFtVoeoxSExVg/zI=",
         "owner": "hexdecima",
         "repo": "patchy",
-        "rev": "88385a0829dfe7a9ca5c3be8849d741704289fd3",
+        "rev": "6f8fb0334892244f593415fe04d29468bb8baf24",
         "type": "github"
       },
       "original": {

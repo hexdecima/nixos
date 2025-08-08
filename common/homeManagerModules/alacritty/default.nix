@@ -1,8 +1,10 @@
 { pkgs, unstable, inputs, system, ... }:
 let
   font = {
-    package = inputs.tundra.packages.${system}.zpix-nerd-font;
-    name = "Zpix Nerd Font";
+    # package = inputs.tundra.packages.${system}.scientifica-nerd-font;
+    # name = "Scientifica Nerd Font";
+    package = pkgs.nerd-fonts.shure-tech-mono;
+    name = "ShureTechMono Nerd Font";
     size = 24;
   };
   colours = builtins.fromTOML (builtins.readFile ./colours.toml);
@@ -11,7 +13,7 @@ in {
   programs.alacritty = {
     enable = true;
     settings = {
-      window.opacity = 0.9;
+      window.opacity = 0.95;
       font = with font; {
         inherit size;
         normal.family = name;

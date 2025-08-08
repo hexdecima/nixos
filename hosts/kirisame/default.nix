@@ -42,6 +42,7 @@
 
   # "fixes" nix-index erroring (for some reason it doesn't like this enabled?)
   programs.command-not-found.enable = false;
+  programs.nix-ld.enable = true;
 
   console = {
     font = "Lat2-Terminus16";

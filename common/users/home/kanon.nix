@@ -18,9 +18,9 @@
   ];
 
   home = {
-    username = "mai";
+    username = "kanon";
     stateVersion = "23.11";
-    homeDirectory = "/home/mai";
+    homeDirectory = "/home/kanon";
     sessionVariables.EDITOR = "nvim";
 
     packages = let patchy = inputs.patchy.packages.${system};

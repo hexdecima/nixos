@@ -1,1 +1,1 @@
-{ imports = [ ./mai.nix ]; }
+{ imports = [ ./mai.nix ./kanon.nix ]; }
